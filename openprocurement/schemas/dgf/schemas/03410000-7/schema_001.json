@@ -1,0 +1,86 @@
+{
+    "definitions": {},
+    "additionalProperties": false,
+    "id": "urn:cav:03410000-7.001",
+    "title": "Деревина",
+    "type": "object",
+    "properties": {
+        "assortment": {
+            "type": "string",
+            "title": "Асортимент",
+            "description": "Назва асортименту"
+        },
+        "species": {
+            "type": "string",
+            "title": "Порода",
+            "description": "Порода деревини"
+        },
+        "class": {
+            "type": "array",
+            "title": "Клас якості",
+            "description": "Назва класу якості",
+            "uniqueItems": true,
+            "items": {
+                "type": "string",
+                "enum": [
+                    "A",
+                    "B",
+                    "C",
+                    "D",
+                    "other"
+                ]
+            }
+        },
+        "diameter": {
+            "type": "number",
+            "minimum": 0,
+            "title": "Діаметр",
+            "description": "Розміри, діаметр (см)"
+        },
+        "length": {
+            "type": "number",
+            "minimum": 0,
+            "title": "Довжина",
+            "description": "Розміри, довжина (м)"
+        },
+        "storage": {
+            "type": "string",
+            "title": "Склад",
+            "description": "Інформація про склад"
+        },
+        "itemPrice": {
+            "type": "number",
+            "minimum": 0,
+            "title": "Початкова ціна за одиницю",
+            "description": "Початкова ціна за одиницю, грн, з ПДВ"
+        },
+        "lotPrice": {
+            "type": "number",
+            "minimum": 0,
+            "title": "Початкова вартість лоту (підлоту)",
+            "description": "Початкова вартість лоту (підлоту), грн, з ПДВ"
+        },
+        "productionDate": {
+            "type": "integer",
+            "minimum": 2000,
+            "maximum": 2100,
+            "title": "Рік",
+            "description": "Рік лісозаготівлі, YYYY"
+        },
+        "quarter": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4,
+            "title": "Квартал",
+            "description": "Квартал лісозаготівлі"
+        }
+    },
+    "required": [
+        "assortment",
+        "species",
+        "class",
+        "diameter",
+        "length",
+        "storage"
+    ]
+}
