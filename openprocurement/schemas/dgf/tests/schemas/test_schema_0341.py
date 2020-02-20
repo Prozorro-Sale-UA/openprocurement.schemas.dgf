@@ -8,7 +8,7 @@ from jsonschema.exceptions import ValidationError
 class TestSchema(unittest.TestCase):
 
     def setUp(self):
-        classification_id = u"03410000-7"
+        classification_id = u"0341"
         version = '001'
 
         store = SchemaStore()
