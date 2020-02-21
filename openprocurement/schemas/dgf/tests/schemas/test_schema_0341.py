@@ -29,8 +29,6 @@ class TestSchema(unittest.TestCase):
             "assortment": "assortment value",
             "species": "species value",
             "class": ["A", "B"],
-            "diameter": 23,
-            "length": 123,
             "storage": "species value"
         }
 
@@ -41,14 +39,15 @@ class TestSchema(unittest.TestCase):
             "assortment": "assortment value",
             "species": "species value",
             "class": ["A", "B"],
-            "diameter": 23,
-            "length": 123,
+            "minDiameter": 23,
+            "maxDiameter": 123,
+            "minLength": 23,
+            "maxLength": 123,
             "storage": "species value",
             "itemPrice": 123,
             "lotPrice": 123,
             "productionDate": 2000,
             "quarter": 4,
-
         }
 
         self.schema.validate(properties)

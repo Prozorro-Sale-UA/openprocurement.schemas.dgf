@@ -31,17 +31,29 @@
                 ]
             }
         },
-        "diameter": {
+        "minDiameter": {
             "type": "number",
             "minimum": 0,
-            "title": "Діаметр",
-            "description": "Розміри, діаметр (см)"
+            "title": "Діаметр, min",
+            "description": "Розміри (від, діаметр (см))"
         },
-        "length": {
+        "maxDiameter": {
             "type": "number",
             "minimum": 0,
-            "title": "Довжина",
-            "description": "Розміри, довжина (м)"
+            "title": "Діаметр, max",
+            "description": "Розміри (до, діаметр (см))"
+        },
+        "minLength": {
+            "type": "number",
+            "minimum": 0,
+            "title": "Довжина, min",
+            "description": "Розміри (від, довжина (м))"
+        },
+        "maxLength": {
+            "type": "number",
+            "minimum": 0,
+            "title": "Довжина, max",
+            "description": "Розміри (до, довжина (м))"
         },
         "storage": {
             "type": "string",
@@ -79,8 +91,6 @@
         "assortment",
         "species",
         "class",
-        "diameter",
-        "length",
         "storage"
     ]
 }
