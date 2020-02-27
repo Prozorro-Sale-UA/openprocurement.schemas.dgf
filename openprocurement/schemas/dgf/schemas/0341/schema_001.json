@@ -16,20 +16,10 @@
             "description": "Порода деревини"
         },
         "class": {
-            "type": "array",
+            "type": "string",
             "title": "Клас якості",
             "description": "Назва класу якості",
-            "uniqueItems": true,
-            "items": {
-                "type": "string",
-                "enum": [
-                    "A",
-                    "B",
-                    "C",
-                    "D",
-                    "other"
-                ]
-            }
+            "enum": ["A", "B", "C", "D", "other"]
         },
         "minDiameter": {
             "type": "number",

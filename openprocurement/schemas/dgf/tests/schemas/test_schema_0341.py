@@ -28,7 +28,7 @@ class TestSchema(unittest.TestCase):
         properties = {
             "assortment": "assortment value",
             "species": "species value",
-            "class": ["A", "B"],
+            "class": "A",
             "storage": "species value"
         }
 
@@ -38,7 +38,7 @@ class TestSchema(unittest.TestCase):
         properties = {
             "assortment": "assortment value",
             "species": "species value",
-            "class": ["A", "B"],
+            "class": "A",
             "minDiameter": 23,
             "maxDiameter": 123,
             "minLength": 23,
